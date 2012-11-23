@@ -1,0 +1,373 @@
+
+/* reset & set
+===================*/
+html{color:#000;background:#fff;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#fff;}body{font-size:12px;line-height:1.22;font-family:"MS PGothic","Osaka",Arial,sans-serif;word-break:break-all;}table{font-size:inherit;font:100%;}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:99%;}h1,h2,h3,h4,h5,h6,textarea{font-size:100%;font-weight:normal;}hr.separation{display:none;}button{cursor:pointer;}header,footer,nav,section,article,aside{display:block;}
+@font-face{font-family:html5questFnt;src:url("../font/GD-DOTFONT-DQ-TTF_008.ttf");}
+/* base setting
+===================*/
+.die *{
+border-color:#f00 !important;
+color:#f00 !important;
+}
+.pinch *{
+border-color:#ffa500 !important;
+color:#ffa500 !important;
+}
+html{
+color:#fff;
+height:100%;
+background-color:#000;
+}
+body{
+height:100%;
+background-color:#000;
+}
+body.ng{
+height:auto;
+}
+#wrapAll{
+height:100%;
+position:relative;
+font-family:html5questFnt;
+}
+#wrapper{
+position:absolute;
+top:50%;
+left:50%;
+background-color:#000;
+margin:-240px 0 0 -320px;
+height:460px;
+width:620px;
+padding:10px;
+font-size:230%;
+overflow:hidden;
+}
+.ng #wrapper{
+position:static;
+width:640px;
+height:auto;
+margin:0 auto;
+padding:20px 0;
+text-align:center;
+}
+#wrapper .bx{
+padding:10px;
+border:3px solid #fff;
+background-color:#000;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+}
+#wrapper > section > h2{
+display:none;
+}
+.lnk{
+color:#fff;
+text-decoration:none;
+padding-bottom:1px;
+border-bottom-width:1px;
+border-bottom-color:#fff;
+border-bottom-style:solid;
+cursor:pointer;
+}
+.lnk:hover{
+border-bottom-style:dotted;
+}
+
+/* ng Scene
+===================*/
+#ngTitle a{
+color:#ffffff;
+}
+#ngTitle h1{
+text-align:center;
+margin-bottom:1.5em;
+}
+#ngTitle fieldset{
+margin:1.5em 0;
+text-align:left;
+}
+#ngTitle .btn{
+margin:0 0 0.5em;
+text-align:center;
+}
+#ngTitle .btn a{
+line-height:0;
+border-bottom:0;
+padding:0;
+margin:0 10px;
+}
+#ngTitle ul{
+text-align:center;
+}
+#ngTitle footer{
+margin-top:1em;
+text-align:center;
+font-size:90%;
+}
+
+/* title Scene
+===================*/
+#title{
+text-align:center;
+}
+#title h1{
+margin-top:1em;
+}
+#title h1 img{
+border:0 !important;
+}
+#start{
+margin:40px 0;
+}
+#sound2{
+margin-bottom:1em;
+}
+#snsBm *{
+font-size:0;
+line-height:0;
+}
+#snsBm img{
+vertical-align:middle;
+}
+#sbm{
+font-size:0;
+}
+#sbm li{
+display:inline-block;
+*display:inline;
+*zoom:1;
+line-height:0;
+margin:0 10px;
+}
+#title footer{
+color:#ccc;
+font-size:80%;
+}
+#title footer a{
+color:#ccc;
+}
+/* input name Scene
+===================*/
+#name{
+text-align:center;
+}
+#set fieldset{
+width:300px;
+margin:0 auto -10px;
+padding-bottom:30px !important;
+}
+#set ul li{
+display:inline-block;
+margin-right:3px;
+}
+#edit{
+width:450px;
+margin:auto;
+display:-moz-box;
+display:-webkit-box;
+}
+#edit li{
+display:inline-block;
+margin-left:1em;
+margin-top:-3px;
+cursor:pointer;
+}
+#edit li:hover{
+margin-bottom:-2px;
+padding-bottom:1px;
+border-bottom:1px solid #fff;
+}
+/* help Scene
+===================*/
+#help{
+height:100%;
+left:0;
+position:absolute;
+top:0;
+width:100%;
+z-index:10;
+background-color:rgba(0,0,0,0.7); 
+}
+#help_x{
+position:absolute;
+top:55px;
+left:475px;
+z-index:200;
+padding-top:0 !important;
+text-decoration:none;
+color:#ffffff;
+}
+#help_x:hover{
+text-decoration:underline;
+}
+#help_img{
+width:380px;
+margin:80px auto 0;
+z-index:100;
+text-align:center;
+-moz-box-shadow:0 0 20px #000;
+}
+
+/* talk Scene
+===================*/
+#talk{
+display:none;
+}
+#serif{
+position:absolute;
+bottom:10px;
+width:594px;
+min-height:120px;
+}
+/* battle Scene
+===================*/
+#battle{
+/*display:none;*/
+}
+#status{
+display:inline-block;
+min-width:3.5em;
+}
+#detail{
+border-style:dashed !important;
+-webkit-transition:border 1s;
+}
+#detail.off{
+opacity:0.5;
+}
+.dragover #detail{
+border-color:#008000 !important;
+}
+#monster{
+position:absolute;
+z-index:5;
+bottom:170px;
+width:100%;
+text-align:center;
+font-family:'ＭＳ Ｐゴシック', Osaka, 'ヒラギノ角ゴ Pro W3';
+}
+#monster.boss img{
+margin-bottom:-35px;
+}
+#select{
+position:absolute;
+bottom:10px;
+width:620px;
+}
+#select > .bx{
+height:120px;
+}
+#action{
+float:left;
+width:400px;
+}
+#detail{
+float:right;
+width:160px;
+}
+#detail p{
+margin-top:-1.2em;
+text-align:center;
+}
+#detail p span{
+background-color:#000;
+}
+
+/* epilogue Scene
+===================*/
+#epilogue{
+text-align:center;
+}
+
+/* save Scene
+===================*/
+#save{
+position:relative;
+top:50%;
+margin-top:-1.5em;
+text-align:center;
+}
+#save article{
+display:inline-block;
+margin:0 auto;
+padding-bottom:20px !important;
+text-align:left;
+}
+#save p{
+position:relative;
+padding:0 20px;
+}
+#save p .lnk:hover:before{
+position:absolute;
+left:5px;
+content:'▽';
+}
+/* sound Scene
+===================*/
+#wrapAll > #sound{
+position:absolute;
+top:50%;
+right:50%;
+z-index:9;
+width:640px;
+margin:-240px -310px 0 0;
+color:#999;
+font-size:140%;
+text-align:right;
+}
+#sound span{
+color:#999;
+border-color:#999;
+}
+#audio{
+display:none;
+}
+
+/* effect
+===================*/
+#effect > div{
+position:absolute;
+z-index:9;
+width:100px;
+height:100px;
+}
+#effect > div > div{
+width:100px;
+height:100px;
+display:-moz-box;
+-moz-box-pack:center;
+-moz-box-align:center;
+vertical-align:middle;
+}
+#effect > div > div > canvas{
+}
+
+#effect.attack > div{
+right:10%;
+top:10%;
+}
+#effect.heal > div{
+bottom:0;
+}
+#effect.heal > div> div > canvas{
+/*-moz-box-shadow: 0 0 20px #fff;*/
+}
+
+#effect.magic > #effectC0Wrap{
+left:6%;
+}
+#effect.magic > #effectC1Wrap{
+left:75%;
+}
+#effect.magic > #effectC2Wrap{
+left:22%;
+bottom:10%;
+}
+#effect.magic > #effectC3Wrap{
+left:62%;
+bottom:10%;
+}
+#effect.magic > #effectC4Wrap{
+left:42%;
+bottom:80%;
+}
